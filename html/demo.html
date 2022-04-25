@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../20072511_TranBinhTrong/CSS/bootstrap.min.css">
+    <script src="../20072511_TranBinhTrong/js/jquery-3.6.0.min.js"></script>
+    <script src="../20072511_TranBinhTrong/js/bootstrap.min.js"></script>
+    <script src="../20072511_TranBinhTrong/js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <header>
+                <<nav class="navbar navbar-default">
+                    <div class="navbar-header col-sm-3 col-lg-3 col-md-3 col-xl-3">
+                        <a href="#"><img src="../20072511_TranBinhTrong/img/LOGO.PNG" alt="" srcset=""></a>
+                    </div>
+                    <div class="navbar-header col-sm-9 col-lg-9 col-md-9 col-xl-9 text-center" style="background-color: aqua;">
+                        <h3>BỘ CÔNG THƯƠNG</h3>
+                        <h2>TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP TP.HỒ CHÍ MINH</h2>
+                        <h5 class="text-danger">Đổi mới, nâng tầm cao mới - Năng động, hội nhập toàn cầu</h5>
+                    </div>
+                </nav>
+                <nav class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Đăng nhập</a></li>
+                        <li><a href="#" id="myBtn">Đăng ký</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="col-md-12">
+            <section class="table-responsive text-center">
+                <caption><h4>DANH SÁCH ĐĂNG KÝ LÀM CĂN CƯỚC SINH VIEN</h4></caption>
+                <caption><h4>TRƯỜNG DHCN THÀNH PHỐ HỒ CHÍ MINH</h4></caption>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Họ tên</th>
+                            <th>SCMND cũ</th>
+                            <th>Quê quán</th>
+                            <th>Email</th>
+                            <th>Điện thoại</th>
+                            <th>Ảnh đại diện</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </div>
+        <div class="col-md-12">
+            <footer>SVTH: Trần Bình Trọng - MSSV: 20072511 Lớp: DHKTPM16A</footer>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="text-align: center;">THÔNG TIN CÁ NHÂN</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" role="form" class="form-horizontal">
+                        <div class="form-group">
+                            <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtHoten" class="control-label col-xs-3">Họ tên</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="txtHoten" placeholder="Nhập họ tên">
+                                <span id="tbHoten" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtSCMND" class="control-label col-xs-3">SCMND cũ</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="txtSCMND" placeholder="Nhập SCMND cũ">
+                                <span id="tbSCMND" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtQuequan" class="control-label col-xs-3">Quê quán</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="txtQuequan" placeholder="Nhập tỉnh của bạn">
+                                <span id="tbQuequan" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtEmail" class="control-label col-xs-3">Email</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="txtEmail" placeholder="Nhập Email của bạn">
+                                <span id="tbEmail" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtSdt" class="control-label col-xs-3">Số điện thoại</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="txtSdt" placeholder="Nhập Email của bạn">
+                                <span id="tbSdt" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtAnh" class="control-label col-xs-3">Ảnh đại diện</label>
+                            <div class="col-md-9">
+                                <input type="file" class="form-control" id="txtAnh">
+                                <span id="tbAnh" class="text-danger">*</span>
+                            </div>
+                        </div>
+                        <button type="button" id="btnSave" class="btn btn-success btn-block">Lưu</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
